@@ -50,17 +50,6 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    id: 'lahmajun',
-    label: 'Лахмаджун и Пиде',
-    defaultImage: 'https://images.unsplash.com/photo-1601315379734-0adc7fd0cd0e?w=400&h=260&fit=crop',
-    items: [
-      { name: 'Лахмаджун', description: 'тонкая турецкая лепёшка с мясным фаршем и специями', price: 180 },
-      { name: 'Пиде с сыром', description: 'турецкая лодочка с сыром', price: 230 },
-      { name: 'Пиде с мясом', description: 'турецкая лодочка с мясной начинкой', price: 260 },
-      { name: 'Пиде со шпинатом и сыром', price: 240 },
-    ],
-  },
-  {
     id: 'pizza',
     label: 'Пицца',
     defaultImage: 'https://images.unsplash.com/photo-1601924572412-cd1f5c8d2e9c?w=400&h=260&fit=crop',
