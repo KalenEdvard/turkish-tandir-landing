@@ -64,6 +64,19 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'garnish',
+    label: 'Гарниры',
+    defaultImage: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Картошка фри', description: '200 г', price: 130, image: '/images/garnir-fri.jpg' },
+      { name: 'Дольки', description: '150 г', price: 140, image: '/images/garnir-dolki.jpg' },
+      { name: 'Нагетсы', description: '6 шт', price: 129, image: '/images/garnir-nagetsy.jpg' },
+      { name: 'Пюре', description: '150 г', price: 120, image: '/images/garnir-pure.jpg' },
+      { name: 'Рис', description: '150 г', price: 135, image: '/images/garnir-ris.jpg' },
+      { name: 'Гречка', description: '150 г', price: 130, image: '/images/garnir-grechka.jpg' },
+    ],
+  },
+  {
     id: 'dishes',
     label: 'Блюда',
     defaultImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop',
