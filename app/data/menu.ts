@@ -86,6 +86,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'steaks',
+    label: 'Стейки',
+    defaultImage: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Стейк лосось', price: 550, image: '/images/steik-losos.jpg' },
+    ],
+  },
+  {
     id: 'drinks',
     label: 'Напитки',
     defaultImage: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=260&fit=crop',
