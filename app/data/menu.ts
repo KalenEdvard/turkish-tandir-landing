@@ -91,6 +91,7 @@ export const menuCategories: MenuCategory[] = [
     defaultImage: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=260&fit=crop',
     items: [
       { name: 'Стейк лосось', price: 550, image: '/images/steik-losos.jpg' },
+      { name: 'Стейк филе', description: 'филе, помидор, лук, соус, огурец', price: 390, image: '/images/steik-file.jpg' },
     ],
   },
   {
