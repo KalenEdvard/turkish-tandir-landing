@@ -73,6 +73,7 @@ export const menuCategories: MenuCategory[] = [
     label: 'Салаты и закуски',
     defaultImage: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=260&fit=crop',
     items: [
+      { name: 'Салат острый', description: 'говядина, болгарский перец, огурец, соус, зелень · 250 г', price: 250, image: '/images/salat-ostry.jpg' },
       { name: 'Ачик-чучук', description: 'свежие томаты, лук, зелень', price: 120 },
       { name: 'Салат из свежих овощей', price: 130 },
       { name: 'Хумус', description: 'подаётся с лепёшкой', price: 150 },
