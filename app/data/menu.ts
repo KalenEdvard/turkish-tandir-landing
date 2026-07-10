@@ -90,9 +90,6 @@ export const menuCategories: MenuCategory[] = [
     label: 'Напитки',
     defaultImage: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=260&fit=crop',
     items: [
-      { name: 'Айран', price: 80 },
-      { name: 'Турецкий чай', price: 60 },
-      { name: 'Компот', price: 70 },
       { name: 'Pepsi', description: '1 л', price: 120, image: '/images/drink-pepsi.png' },
       { name: 'Coca-Cola', description: '1 л', price: 120, image: '/images/drink-cola.png' },
       { name: 'Fanta', description: '1 л', price: 120, image: '/images/drink-fanta.png' },
