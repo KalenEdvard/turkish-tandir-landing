@@ -93,7 +93,10 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Айран', price: 80 },
       { name: 'Турецкий чай', price: 60 },
       { name: 'Компот', price: 70 },
-      { name: 'Кола / Фанта / Спрайт', price: 90 },
+      { name: 'Pepsi', description: '1 л', price: 120, image: '/images/drink-pepsi.png' },
+      { name: 'Coca-Cola', description: '1 л', price: 120, image: '/images/drink-cola.png' },
+      { name: 'Fanta', description: '1 л', price: 120, image: '/images/drink-fanta.png' },
+      { name: 'Fuse tea', description: '1 л', price: 110, image: '/images/drink-fusetea.png' },
     ],
   },
 ];
