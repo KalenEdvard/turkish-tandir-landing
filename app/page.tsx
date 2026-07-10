@@ -141,7 +141,7 @@ export default function Home() {
                 className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all flex flex-col"
               >
                 {/* Photo */}
-                <div className="relative w-full h-44">
+                <div className="relative w-full aspect-square">
                   <Image
                     src={imgSrc}
                     alt={item.name}
