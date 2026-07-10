@@ -86,6 +86,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'dishes',
+    label: 'Блюда',
+    defaultImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Плов', price: 295, image: '/images/plov.jpg' },
+    ],
+  },
+  {
     id: 'steaks',
     label: 'Стейки',
     defaultImage: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=260&fit=crop',
