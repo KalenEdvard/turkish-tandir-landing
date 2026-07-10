@@ -61,6 +61,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'pizza',
+    label: 'Пицца',
+    defaultImage: 'https://images.unsplash.com/photo-1601924572412-cd1f5c8d2e9c?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Пепперони', description: 'томатный соус, сыр моцарелла, пеперони', price: 450, image: '/images/pizza-pepperoni.jpg', variants: [{ label: '40 см', price: 450 }, { label: '30 см', price: 350 }] },
+    ],
+  },
+  {
     id: 'salads',
     label: 'Салаты и закуски',
     defaultImage: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=260&fit=crop',
