@@ -11,7 +11,7 @@ function whatsappLink(text: string) {
 }
 
 export default function Home() {
-  const [activeCategory, setActiveCategory] = useState('tandir');
+  const [activeCategory, setActiveCategory] = useState('shashlyk');
   const [cart, setCart] = useState<{ name: string; price: number; qty: number }[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [showNav, setShowNav] = useState(false);

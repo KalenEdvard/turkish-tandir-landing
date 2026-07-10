@@ -20,17 +20,6 @@ export type MenuCategory = {
 
 export const menuCategories: MenuCategory[] = [
   {
-    id: 'tandir',
-    label: 'Тандыр Кебаб',
-    defaultImage: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&h=260&fit=crop',
-    items: [
-      { name: 'Люля-кебаб из говядины', description: 'рубленое мясо на шампуре, запечённое в тандыре', price: 320 },
-      { name: 'Адана кебаб', description: 'острый кебаб по-турецки, специи, перец', price: 340 },
-      { name: 'Шиш-кебаб куриный', description: 'кусочки куриного филе, маринад, овощи гриль', price: 290 },
-      { name: 'Шиш-кебаб из говядины', description: 'кусочки говядины, маринад, овощи гриль', price: 350 },
-    ],
-  },
-  {
     id: 'shashlyk',
     label: 'Шашлык',
     defaultImage: 'https://images.unsplash.com/photo-1598515213692-d872a9adbe45?w=400&h=260&fit=crop',
