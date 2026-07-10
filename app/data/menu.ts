@@ -51,8 +51,12 @@ export const menuCategories: MenuCategory[] = [
     label: 'Салат',
     defaultImage: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=260&fit=crop',
     items: [
-      { name: 'Салат острый', description: 'говядина, болгарский перец, огурец, соус, зелень · 250 г', price: 250, image: '/images/salat-ostry.jpg' },
-      { name: 'Цезарь', description: 'салат, соус, гренки, помидор, сыр · 205 г', price: 250, image: '/images/salat-cezar.jpg' },
+      { name: 'Свекольный салат', description: '180 г', price: 179, image: '/images/salat-svekolny.jpg' },
+      { name: 'Морковь по-корейски', description: '200 г', price: 190, image: '/images/salat-korovcha.jpg' },
+      { name: 'Салат острый', description: '250 г', price: 225, image: '/images/salat-ostry.jpg' },
+      { name: 'Салат свежая нарезка', description: '250 г', price: 185, image: '/images/salat-narezka.jpg' },
+      { name: 'Салат греческий', description: '250 г', price: 230, image: '/images/salat-grechesky.jpg' },
+      { name: 'Салат цезарь', description: '250 г', price: 220, image: '/images/salat-cezar.jpg' },
     ],
   },
   {
