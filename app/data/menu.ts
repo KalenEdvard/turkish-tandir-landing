@@ -78,6 +78,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'sushi',
+    label: 'Суши и Роллы',
+    defaultImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Горячие роллы', price: 275, image: '/images/goryachie-rolly.jpg' },
+    ],
+  },
+  {
     id: 'drinks',
     label: 'Напитки',
     defaultImage: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=260&fit=crop',
