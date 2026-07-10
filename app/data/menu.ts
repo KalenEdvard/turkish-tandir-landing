@@ -31,6 +31,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'shashlyk',
+    label: 'Шашлык',
+    defaultImage: 'https://images.unsplash.com/photo-1598515213692-d872a9adbe45?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Табака', description: 'Целый табака, подаётся с луком, салатом и чесночным соусом', price: 450 },
+    ],
+  },
+  {
     id: 'doner',
     label: 'Донер',
     defaultImage: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=260&fit=crop',
