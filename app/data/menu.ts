@@ -90,6 +90,16 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'tez-tatym',
+    label: 'Тез татым',
+    defaultImage: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Биф бургер', price: 220, image: '/images/bif-burger.jpg' },
+      { name: 'Острые крылышки', price: 220, image: '/images/ostrye-krylyshki.jpg' },
+      { name: 'Чикен бургер', price: 190, image: '/images/chicken-burger.jpg' },
+    ],
+  },
+  {
     id: 'dishes',
     label: 'Блюда',
     defaultImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop',
