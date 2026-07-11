@@ -108,6 +108,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'soups',
+    label: 'Супы',
+    defaultImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Шорпо с говядиной', price: 300, image: '/images/shorpo.jpg' },
+    ],
+  },
+  {
     id: 'pasta',
     label: 'Паста',
     defaultImage: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=260&fit=crop',
