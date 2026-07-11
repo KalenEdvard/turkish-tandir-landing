@@ -117,6 +117,7 @@ export const menuCategories: MenuCategory[] = [
     defaultImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop',
     items: [
       { name: 'Плов', price: 295, image: '/images/plov.jpg', variants: [{ label: '300 г', price: 295 }, { label: '1 кг', price: 2400 }] },
+      { name: 'Жаровня', price: 450, image: '/images/zharovnya.jpg' },
     ],
   },
   {
