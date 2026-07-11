@@ -25,6 +25,9 @@ export const menuCategories: MenuCategory[] = [
     defaultImage: 'https://images.unsplash.com/photo-1598515213692-d872a9adbe45?w=400&h=260&fit=crop',
     items: [
       { name: 'Табака', description: 'Целый табака, подаётся с луком, салатом и чесночным соусом', price: 450, image: '/images/tabaka.jpeg' },
+      { name: 'Шашлык из крылышек', price: 210, image: '/images/shashlyk-krylyshki.jpg' },
+      { name: 'Шашлык из курицы', price: 180, image: '/images/shashlyk-kuritsa.jpg' },
+      { name: 'Люля кебаб', price: 190, image: '/images/lyulya-kebab.jpg' },
     ],
   },
   {
