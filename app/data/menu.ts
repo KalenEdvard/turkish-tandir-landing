@@ -113,6 +113,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Плов', price: 295, image: '/images/plov.jpg', variants: [{ label: '300 г', price: 295 }, { label: '1 кг', price: 2400 }] },
       { name: 'Жаровня', price: 450, image: '/images/zharovnya.jpg' },
       { name: 'Манты', price: 200, image: '/images/manty.jpg' },
+      { name: 'Гуляш', price: 310, image: '/images/gulyash.jpg' },
     ],
   },
   {
