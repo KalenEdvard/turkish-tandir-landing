@@ -65,6 +65,15 @@ export const menuCategories: MenuCategory[] = [
     defaultImage: 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=260&fit=crop',
     items: [
       { name: 'Горячие роллы', price: 275, image: '/images/goryachie-rolly.jpg' },
+      { name: 'Филадельфия с угрем', price: 330, image: '/images/roll-philadelphia-ugor.jpg' },
+      { name: 'Ролл с огурцом', price: 190, image: '/images/roll-ogurets.jpg' },
+      { name: 'Ролл с угрем', price: 230, image: '/images/roll-ugor.jpg' },
+      { name: 'Роллы сырные', price: 250, image: '/images/roll-syrny.jpg' },
+      { name: 'Ролл калифорния', price: 270, image: '/images/roll-california.jpg' },
+      { name: 'Ролл калифорния с крабом', price: 299, image: '/images/roll-california-krab.jpg' },
+      { name: 'Запеченные роллы с угрем', price: 320, image: '/images/roll-zapechenny.jpg' },
+      { name: 'Запеченные роллы с крабом', price: 299, image: '/images/roll-zapechenny.jpg' },
+      { name: 'Запеченные роллы с семгой', price: 330, image: '/images/roll-zapechenny.jpg' },
     ],
   },
   {
