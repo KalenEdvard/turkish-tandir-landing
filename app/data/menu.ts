@@ -107,6 +107,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
+    id: 'pasta',
+    label: 'Паста',
+    defaultImage: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Фрикасе с рисом', price: 340, image: '/images/frikase.jpg' },
+    ],
+  },
+  {
     id: 'dishes',
     label: 'Блюда',
     defaultImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop',
