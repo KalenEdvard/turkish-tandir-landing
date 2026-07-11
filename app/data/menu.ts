@@ -104,6 +104,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Острые крылышки', price: 220, image: '/images/ostrye-krylyshki.jpg' },
       { name: 'Чикен бургер', price: 190, image: '/images/chicken-burger.jpg' },
       { name: 'Нагетсы', price: 129, image: '/images/nagetsy-teztatym.jpg' },
+      { name: 'Картошка фри', price: 130, image: '/images/kartoshka-fri-teztatym.jpg' },
     ],
   },
   {
