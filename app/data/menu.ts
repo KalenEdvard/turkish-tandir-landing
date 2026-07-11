@@ -43,7 +43,12 @@ export const menuCategories: MenuCategory[] = [
     label: 'Пицца',
     defaultImage: 'https://images.unsplash.com/photo-1601924572412-cd1f5c8d2e9c?w=400&h=260&fit=crop',
     items: [
-      { name: 'Пепперони', description: 'томатный соус, сыр моцарелла, пеперони', price: 450, image: '/images/pizza-pepperoni.jpg', variants: [{ label: '40 см', price: 450 }, { label: '30 см', price: 350 }] },
+      { name: 'Пепперони', price: 390, image: '/images/pizza-pepperoni.jpg', variants: [{ label: '30 см', price: 390 }, { label: '40 см', price: 490 }] },
+      { name: '4 сыра', price: 390, image: '/images/pizza-4syra.jpg', variants: [{ label: '30 см', price: 390 }, { label: '40 см', price: 490 }] },
+      { name: 'Маргарита', price: 350, image: '/images/pizza-margarita.jpg', variants: [{ label: '30 см', price: 350 }, { label: '40 см', price: 450 }] },
+      { name: 'Куриная', price: 385, image: '/images/pizza-kuritsa.jpg', variants: [{ label: '30 см', price: 385 }, { label: '40 см', price: 480 }] },
+      { name: 'Ассорти', price: 385, image: '/images/pizza-assorti.jpg', variants: [{ label: '30 см', price: 385 }, { label: '40 см', price: 485 }] },
+      { name: 'Мясная', price: 390, image: '/images/pizza-myasnaya.jpg', variants: [{ label: '30 см', price: 390 }, { label: '40 см', price: 490 }] },
     ],
   },
   {
