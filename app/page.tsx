@@ -84,22 +84,6 @@ export default function Home() {
           </h1>
           <p className="text-white/60 text-lg sm:text-xl mb-2 tracking-wide">Настоящая турецкая кухня</p>
           <p className="text-white/40 text-sm mb-8">Кебаб · Донер · Лахмаджун · Пиде</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#menu"
-              className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full text-lg tracking-wider transition-colors"
-            >
-              СМОТРЕТЬ МЕНЮ
-            </a>
-            <a
-              href={whatsappLink('Здравствуйте! Хочу сделать заказ')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white font-bold px-8 py-4 rounded-full text-lg tracking-wider transition-colors"
-            >
-              ЗАКАЗАТЬ В WHATSAPP
-            </a>
-          </div>
         </div>
       </section>
 
