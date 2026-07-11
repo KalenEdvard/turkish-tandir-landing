@@ -20,6 +20,15 @@ export type MenuCategory = {
 
 export const menuCategories: MenuCategory[] = [
   {
+    id: 'firmennye',
+    label: 'Фирменные',
+    defaultImage: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=260&fit=crop',
+    items: [
+      { name: 'Донер в лаваше с курицей', price: 230, image: '/images/doner-lavash.jpg' },
+      { name: 'Донер в лаваше с говядиной', price: 340, image: '/images/doner-lavash.jpg' },
+    ],
+  },
+  {
     id: 'shashlyk',
     label: 'Шашлык',
     defaultImage: 'https://images.unsplash.com/photo-1598515213692-d872a9adbe45?w=400&h=260&fit=crop',
