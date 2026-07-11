@@ -40,12 +40,6 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    id: 'doner',
-    label: 'Донер',
-    defaultImage: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=260&fit=crop',
-    items: [],
-  },
-  {
     id: 'pizza',
     label: 'Пицца',
     defaultImage: 'https://images.unsplash.com/photo-1601924572412-cd1f5c8d2e9c?w=400&h=260&fit=crop',
