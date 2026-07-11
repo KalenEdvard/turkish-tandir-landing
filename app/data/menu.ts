@@ -115,6 +115,8 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Coca-Cola', description: '1 л', price: 120, image: '/images/drink-cola.png' },
       { name: 'Fanta', description: '1 л', price: 120, image: '/images/drink-fanta.png' },
       { name: 'Fuse tea', description: '1 л', price: 110, image: '/images/drink-fusetea.png' },
+      { name: 'Сок яблочный', description: '1 л', price: 140, image: '/images/sok-yablochny.jpg' },
+      { name: 'Сок апельсиновый', description: '1 л', price: 140, image: '/images/sok-apelsinovy.jpg' },
     ],
   },
 ];
