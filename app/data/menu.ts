@@ -34,12 +34,7 @@ export const menuCategories: MenuCategory[] = [
     id: 'doner',
     label: 'Донер',
     defaultImage: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=260&fit=crop',
-    items: [
-      { name: 'Донер куриный', description: 'лаваш, курица, овощи, соус на выбор', price: 220 },
-      { name: 'Донер говяжий', description: 'лаваш, говядина, овощи, соус на выбор', price: 250 },
-      { name: 'Донер двойной', description: 'двойная порция мяса', price: 300 },
-      { name: 'Донер-тарелка', description: 'мясо, рис, овощи, без лаваша', price: 280 },
-    ],
+    items: [],
   },
   {
     id: 'pizza',
