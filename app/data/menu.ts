@@ -26,6 +26,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       { name: 'Донер в лаваше с курицей', price: 230, image: '/images/doner-lavash.jpg' },
       { name: 'Донер в лаваше с говядиной', price: 340, image: '/images/doner-lavash.jpg' },
+      { name: 'Хачапури с сыром', price: 280, image: '/images/khachapuri.jpg' },
     ],
   },
   {
