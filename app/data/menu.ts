@@ -64,6 +64,7 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Салат свежая нарезка', description: '250 г', price: 185, image: '/images/salat-narezka.jpg' },
       { name: 'Салат греческий', description: '250 г', price: 230, image: '/images/salat-grechesky.jpg' },
       { name: 'Салат цезарь', description: '250 г', price: 220, image: '/images/salat-cezar.jpg' },
+      { name: 'Баклажан фри', price: 230, image: '/images/baklazhan-fri.jpg' },
     ],
   },
   {
