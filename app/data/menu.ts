@@ -124,6 +124,11 @@ export const menuCategories: MenuCategory[] = [
     defaultImage: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=260&fit=crop',
     items: [
       { name: 'Шорпо с говядиной', price: 300, image: '/images/shorpo.jpg' },
+      { name: 'Чучвара', price: 215, image: '/images/chuchvara.jpg' },
+      { name: 'Пельмени', price: 250, image: '/images/pelmeni.jpg' },
+      { name: 'Рамен с говядиной', price: 220, image: '/images/ramen-govyadina.jpg' },
+      { name: 'Рамен с курицей', price: 190, image: '/images/ramen-kuritsa.jpg' },
+      { name: 'Мастава', price: 235, image: '/images/mastava.jpg' },
     ],
   },
   {
