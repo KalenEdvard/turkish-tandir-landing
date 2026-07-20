@@ -47,6 +47,8 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Шашлык из крылышек', price: 210, image: '/images/shashlyk-krylyshki.jpg' },
       { name: 'Шашлык из курицы', price: 180, image: '/images/shashlyk-kuritsa.jpg' },
       { name: 'Люля кебаб', price: 190, image: '/images/lyulya-kebab.jpg' },
+      { name: 'Стейк лосось', price: 550, image: '/images/steik-losos.jpg' },
+      { name: 'Стейк филе', description: 'филе, помидор, лук, соус, огурец', price: 390, image: '/images/steik-file.jpg' },
     ],
   },
   {
@@ -149,15 +151,6 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Жаровня', price: 450, image: '/images/zharovnya.jpg' },
       { name: 'Манты', price: 200, image: '/images/manty.jpg' },
       { name: 'Гуляш', price: 310, image: '/images/gulyash.jpg' },
-    ],
-  },
-  {
-    id: 'steaks',
-    label: 'Стейки',
-    defaultImage: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=260&fit=crop',
-    items: [
-      { name: 'Стейк лосось', price: 550, image: '/images/steik-losos.jpg' },
-      { name: 'Стейк филе', description: 'филе, помидор, лук, соус, огурец', price: 390, image: '/images/steik-file.jpg' },
     ],
   },
   {
