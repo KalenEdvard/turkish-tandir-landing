@@ -135,14 +135,6 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    id: 'pasta',
-    label: 'Паста',
-    defaultImage: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=260&fit=crop',
-    items: [
-      { name: 'Фрикасе с рисом', price: 340, image: '/images/frikase.jpg' },
-    ],
-  },
-  {
     id: 'dishes',
     label: 'Блюда',
     defaultImage: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=260&fit=crop',
@@ -160,6 +152,8 @@ export const menuCategories: MenuCategory[] = [
       { name: 'Бишштекс', price: 295, image: '/images/bishsteks.jpg' },
       { name: 'Ганфан', price: 305, image: '/images/ganfan.jpg' },
       { name: 'Бефстроганов', price: 350, image: '/images/befstroganov.jpg' },
+      { name: 'Фетучини', price: 300, image: '/images/fetuchini.jpg' },
+      { name: 'Фрикасе с сыром', price: 340, image: '/images/frikase-syrom.jpg' },
     ],
   },
   {
