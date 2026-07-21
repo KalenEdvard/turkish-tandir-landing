@@ -187,8 +187,8 @@ export default function Home() {
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
               <div className="text-3xl mb-3">📍</div>
               <h3 className="text-white font-bold text-lg mb-1">Адрес</h3>
-              <p className="text-white/60">Укажите адрес</p>
-              <p className="text-white/40 text-sm">заведения</p>
+              <p className="text-white/60">Ноокат</p>
+              <p className="text-white/40 text-sm">Кыргызстан</p>
             </div>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
               <div className="text-3xl mb-3">📱</div>

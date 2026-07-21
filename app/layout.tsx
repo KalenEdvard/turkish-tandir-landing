@@ -9,30 +9,57 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: 'Турецкий Тандыр — Кебаб, Донер, Лахмаджун',
-  description: 'Турецкий Тандыр — турецкая кухня: кебаб из тандыра, донер, лахмаджун, пиде. Заказ через WhatsApp. Доставка и самовывоз.',
+  title: 'Турецкий Тандыр — кебаб, донер, шашлык в Ноокате',
+  description: 'Турецкий Тандыр в Ноокате — турецкая кухня: кебаб из тандыра, донер, шашлык, пицца, роллы. Заказ через WhatsApp. Доставка и самовывоз по Ноокату.',
   keywords: [
-    'Турецкий Тандыр',
-    'турецкая кухня',
-    'тандыр кебаб',
-    'донер',
-    'лахмаджун',
-    'пиде',
-    'шашлык',
-    'доставка еды',
-    'заказать кебаб',
+    'Турецкий Тандыр Ноокат',
+    'ресторан Ноокат',
+    'кафе Ноокат',
+    'еда Ноокат',
+    'доставка еды Ноокат',
+    'заказать еду Ноокат',
+    'тандыр кебаб Ноокат',
+    'донер Ноокат',
+    'шашлык Ноокат',
+    'турецкая кухня Ноокат',
+    'пицца Ноокат',
+    'роллы Ноокат',
   ],
   openGraph: {
-    title: 'Турецкий Тандыр — Кебаб, Донер, Лахмаджун',
-    description: 'Турецкая кухня: кебаб из тандыра, донер, лахмаджун, пиде. Заказ через WhatsApp.',
+    title: 'Турецкий Тандыр — кебаб, донер, шашлык в Ноокате',
+    description: 'Турецкая кухня в Ноокате: кебаб из тандыра, донер, шашлык, пицца, роллы. Заказ через WhatsApp.',
     locale: 'ru_KG',
     type: 'website',
   },
+  other: {
+    'geo.placename': 'Ноокат',
+    'geo.region': 'KG',
+  },
+};
+
+const restaurantSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Restaurant',
+  name: 'Турецкий Тандыр',
+  servesCuisine: 'Turkish',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Ноокат',
+    addressCountry: 'KG',
+  },
+  telephone: '+996505100812',
+  priceRange: '$$',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchema) }}
+        />
+      </head>
       <body className={`${oswald.variable} font-oswald bg-[#0a0a0a] text-white`}>{children}</body>
     </html>
   );
