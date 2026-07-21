@@ -36,7 +36,7 @@ export default function Home() {
 
   function buildOrderText() {
     const lines = cart.map((i) => `• ${i.name} x${i.qty} — ${i.price * i.qty} сом`);
-    return `Саламатсызбы! Заказ бергим келет:\n${lines.join('\n')}\n\nЖалпы: ${totalPrice} сом`;
+    return `Саламатсызбы! Заказ берүүнү каалайм:\n${lines.join('\n')}\n\nЖалпы: ${totalPrice} сом`;
   }
 
   return (
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href={cart.length > 0 ? whatsappLink(buildOrderText()) : whatsappLink('Саламатсызбы! Заказ бергим келет')}
+            href={cart.length > 0 ? whatsappLink(buildOrderText()) : whatsappLink('Саламатсызбы! Заказ берүүнү каалайм')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-10 py-4 rounded-full text-xl tracking-wider transition-colors"
@@ -265,7 +265,7 @@ export default function Home() {
           {/* Footer */}
           <div className="px-5 py-4 border-t border-white/10">
             <a
-              href={whatsappLink('Саламатсызбы! Заказ бергим келет')}
+              href={whatsappLink('Саламатсызбы! Заказ берүүнү каалайм')}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-full text-center tracking-wider transition-colors"
