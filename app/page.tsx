@@ -82,7 +82,7 @@ export default function Home() {
             <span className="text-white">ТУРЕЦКИЙ</span>
             <span className="text-red-500"> ТАНДЫР</span>
           </h1>
-          <p className="text-white/60 text-lg sm:text-xl mb-2 tracking-wide">Настоящая турецкая кухня</p>
+          <p className="text-white/60 text-lg sm:text-xl mb-2 tracking-wide">Чыныгы түрк ашканасы</p>
           <p className="text-white/40 text-sm mb-8">Кебаб · Донер · Лахмаджун · Пиде</p>
         </div>
       </section>
