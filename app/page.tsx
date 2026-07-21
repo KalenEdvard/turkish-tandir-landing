@@ -111,7 +111,7 @@ export default function Home() {
         </div>
 
         {/* Menu items */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
           {activeMenu?.items.map((item) => {
             const imgSrc = item.image || activeMenu.defaultImage;
             const variantIdx = selectedVariants[item.name] ?? 0;
@@ -122,7 +122,7 @@ export default function Home() {
             return (
               <div
                 key={item.name}
-                className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-red-500/50 transition-all flex flex-col"
+                className="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-red-500/50 transition-all flex flex-col"
               >
                 {/* Photo */}
                 <div className="relative w-full aspect-square">
@@ -131,27 +131,27 @@ export default function Home() {
                     alt={item.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 16vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
 
                 {/* Info */}
-                <div className="p-4 flex flex-col flex-1">
-                  <div className="flex justify-between items-start mb-1">
-                    <h3 className="text-white font-bold text-base leading-tight flex-1">{item.name}</h3>
-                    <span className="text-red-500 font-bold text-lg ml-2 whitespace-nowrap">{displayPrice} с</span>
+                <div className="p-2 flex flex-col flex-1">
+                  <div className="flex justify-between items-start mb-0.5 gap-1">
+                    <h3 className="text-white font-bold text-xs leading-tight flex-1">{item.name}</h3>
+                    <span className="text-red-500 font-bold text-xs whitespace-nowrap">{displayPrice} с</span>
                   </div>
                   {item.description && (
-                    <p className="text-white/40 text-xs mb-2 leading-relaxed flex-1">{item.description}</p>
+                    <p className="text-white/40 text-[10px] mb-1 leading-snug flex-1 line-clamp-2">{item.description}</p>
                   )}
                   {item.variants && (
-                    <div className="flex flex-wrap gap-1.5 mb-3">
+                    <div className="flex flex-wrap gap-1 mb-1.5">
                       {item.variants.map((v, i) => (
                         <button
                           key={v.label}
                           onClick={() => setSelectedVariants((prev) => ({ ...prev, [item.name]: i }))}
-                          className={`px-2.5 py-1 rounded-full text-xs font-bold tracking-wide transition-all ${
+                          className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold tracking-wide transition-all ${
                             variantIdx === i
                               ? 'bg-red-600 text-white'
                               : 'bg-white/10 text-white/60 hover:bg-white/20 hover:text-white'
@@ -164,7 +164,7 @@ export default function Home() {
                   )}
                   <button
                     onClick={() => addToCart(cartKey, displayPrice)}
-                    className={`mt-auto w-full font-bold py-2 rounded-full text-sm tracking-wider transition-all ${
+                    className={`mt-auto w-full font-bold py-1 rounded-full text-[10px] tracking-wider transition-all ${
                       inCart
                         ? 'bg-red-600 text-white'
                         : 'bg-red-600/20 hover:bg-red-600 border border-red-600/50 hover:border-red-600 text-red-400 hover:text-white'
