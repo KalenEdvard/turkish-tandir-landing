@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     'geo.placename': 'Ноокат',
     'geo.region': 'KG',
   },
+  verification: {
+    google: '3ngXBXhU0bHQsO9ppX8ib17-sJHq1nFCZ6c2AKk1elQ',
+  },
 };
 
 const restaurantSchema = {
