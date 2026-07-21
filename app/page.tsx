@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { menuCategories } from './data/menu';
 
-const WHATSAPP = '+996700000000';
+const WHATSAPP = '+996505100812';
 
 function whatsappLink(text: string) {
   return `https://wa.me/${WHATSAPP.replace(/\D/g, '')}?text=${encodeURIComponent(text)}`;
@@ -36,7 +36,7 @@ export default function Home() {
 
   function buildOrderText() {
     const lines = cart.map((i) => `• ${i.name} x${i.qty} — ${i.price * i.qty} сом`);
-    return `Здравствуйте! Хочу сделать заказ:\n${lines.join('\n')}\n\nИтого: ${totalPrice} сом`;
+    return `Саламатсызбы! Заказ бергим келет:\n${lines.join('\n')}\n\nЖалпы: ${totalPrice} сом`;
   }
 
   return (
@@ -193,7 +193,7 @@ export default function Home() {
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
               <div className="text-3xl mb-3">📱</div>
               <h3 className="text-white font-bold text-lg mb-1">WhatsApp</h3>
-              <a href={whatsappLink('Здравствуйте!')} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">
+              <a href={whatsappLink('Саламатсызбы!')} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">
                 {WHATSAPP}
               </a>
             </div>
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href={cart.length > 0 ? whatsappLink(buildOrderText()) : whatsappLink('Здравствуйте! Хочу сделать заказ')}
+            href={cart.length > 0 ? whatsappLink(buildOrderText()) : whatsappLink('Саламатсызбы! Заказ бергим келет')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-10 py-4 rounded-full text-xl tracking-wider transition-colors"
@@ -265,7 +265,7 @@ export default function Home() {
           {/* Footer */}
           <div className="px-5 py-4 border-t border-white/10">
             <a
-              href={whatsappLink('Здравствуйте! Хочу сделать заказ')}
+              href={whatsappLink('Саламатсызбы! Заказ бергим келет')}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-full text-center tracking-wider transition-colors"
