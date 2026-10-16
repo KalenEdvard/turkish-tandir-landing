@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { menuCategories } from './data/menu';
 
@@ -17,7 +17,54 @@ export default function Home() {
   const [showNav, setShowNav] = useState(false);
   const [selectedVariants, setSelectedVariants] = useState<Record<string, number>>({});
 
-  const activeMenu = menuCategories.find((c) => c.id === activeCategory);
+  const [headerH, setHeaderH] = useState(64);
+  const [chipsH, setChipsH] = useState(60);
+  const chipsRef = useRef<HTMLDivElement>(null);
+  const chipsScrollRef = useRef<HTMLDivElement>(null);
+  const scrollLockUntil = useRef(0);
+
+  function centerChip(id: string) {
+    const box = chipsScrollRef.current;
+    const chip = box?.querySelector<HTMLElement>(`[data-chip="${id}"]`);
+    if (!box || !chip) return;
+    box.scrollTo({ left: chip.offsetLeft - box.clientWidth / 2 + chip.clientWidth / 2, behavior: 'smooth' });
+  }
+
+  function jumpToCategory(id: string) {
+    setActiveCategory(id);
+    centerChip(id);
+    scrollLockUntil.current = Date.now() + 800;
+    document.querySelector<HTMLElement>(`[data-section="${id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  useEffect(() => {
+    const measure = () => {
+      const h = document.querySelector('header')?.getBoundingClientRect().height;
+      if (h) setHeaderH(h);
+      const c = chipsRef.current?.getBoundingClientRect().height;
+      if (c) setChipsH(c);
+    };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (Date.now() < scrollLockUntil.current) return;
+      const line = headerH + chipsH + 24;
+      let best: string | null = null;
+      document.querySelectorAll<HTMLElement>('[data-section]').forEach((el) => {
+        if (el.getBoundingClientRect().top <= line) best = el.dataset.section!;
+      });
+      if (best && best !== activeCategory) {
+        setActiveCategory(best);
+        centerChip(best);
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [activeCategory, headerH, chipsH]);
 
   function addToCart(name: string, price: number) {
     setCart((prev) => {
@@ -94,11 +141,17 @@ export default function Home() {
         </h2>
 
         {/* Category tabs */}
-        <div className="flex gap-2 overflow-x-auto pb-4 mb-8">
+        <div
+          ref={chipsRef}
+          className="sticky z-40 -mx-4 px-4 pt-3 pb-3 mb-6 bg-[#0a0a0a]/95 backdrop-blur-sm"
+          style={{ top: headerH }}
+        >
+        <div ref={chipsScrollRef} className="flex gap-2 overflow-x-auto">
           {menuCategories.map((cat) => (
             <button
               key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
+              data-chip={cat.id}
+              onClick={() => jumpToCategory(cat.id)}
               className={`whitespace-nowrap px-5 py-2 rounded-full font-bold text-sm tracking-wider transition-all ${
                 activeCategory === cat.id
                   ? 'bg-red-600 text-white'
@@ -109,10 +162,19 @@ export default function Home() {
             </button>
           ))}
         </div>
+        </div>
 
         {/* Menu items */}
+        {menuCategories.map((activeMenu) => (
+        <div
+          key={activeMenu.id}
+          data-section={activeMenu.id}
+          style={{ scrollMarginTop: headerH + chipsH + 8 }}
+          className="mb-10"
+        >
+        <h3 className="text-2xl font-bold tracking-widest text-white mb-4">{activeMenu.label.toUpperCase()}</h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
-          {activeMenu?.items.map((item) => {
+          {activeMenu.items.map((item) => {
             const imgSrc = item.image || activeMenu.defaultImage;
             const variantIdx = selectedVariants[item.name] ?? 0;
             const currentVariant = item.variants ? item.variants[variantIdx] : null;
@@ -177,6 +239,8 @@ export default function Home() {
             );
           })}
         </div>
+        </div>
+        ))}
       </section>
 
       {/* CONTACTS */}
@@ -244,11 +308,8 @@ export default function Home() {
               <button
                 key={cat.id}
                 onClick={() => {
-                  setActiveCategory(cat.id);
                   setShowNav(false);
-                  setTimeout(() => {
-                    document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
-                  }, 300);
+                  setTimeout(() => jumpToCategory(cat.id), 300);
                 }}
                 style={{ transitionDelay: showNav ? `${i * 40}ms` : '0ms' }}
                 className={`w-full text-left px-6 py-4 font-bold tracking-wider text-base transition-all duration-200 border-b border-white/5 flex items-center gap-3 ${
